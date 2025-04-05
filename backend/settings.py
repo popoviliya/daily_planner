@@ -14,7 +14,7 @@ class CredsAPP:
     NAME: str = os.getenv("APP_NAME", "daily_planner")
     # key for session variables (cookies)
     SESSION_KEY: str = os.getenv("APP_SESSION_KEY")
-    # session durations (hours)
+    # session duration (hours)
     PERMANENT_SESSION_LIFETIME: datetime.timedelta = (
         datetime.timedelta(hours=int(os.getenv("APP_PERMANENT_SESSION_LIFETIME", "100")))
     )
